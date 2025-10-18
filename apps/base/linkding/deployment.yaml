@@ -26,8 +26,10 @@ spec:
             allowPrivilegeEScalation: false
 
           envFrom:
+            #- configMapRef:
+            #    name: linkding-configmap
             - secretRef:
-              name: linkding-container-env
+                name: linkding-container-env
 
           volumeMounts:
             - mountPath: /etc/linkding/data
