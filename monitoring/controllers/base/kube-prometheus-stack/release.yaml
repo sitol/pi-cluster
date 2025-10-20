@@ -37,6 +37,6 @@ spec:
         hosts:
           - grs.whirlingworld.com
         tls:
-          - hosts:
-            - grs.whirlingworld.com
-          secretName: grafana-tls-secret
+          - secretName: grafana-tls-secret
+            hosts:
+              - grs.whirlingworld.com
