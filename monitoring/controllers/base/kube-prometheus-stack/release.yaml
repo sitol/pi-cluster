@@ -36,7 +36,7 @@ spec:
         ingressClassName: traefik
         hosts:
           - grs.whirlingworld.com
-        #tls:
-        #  - hosts:
-        #    - grs.whirlingworld.com
-        #  secretName: grafana-tls-secret
+        tls:
+          - hosts:
+            - grs.whirlingworld.com
+          secretName: grafana-tls-secret
