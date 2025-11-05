@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: audiobookshelf-configmap
+  namespace: audiobookshelf
+data:
+  AUDIOBOOKSHELF_PORT: "3005"
+
