@@ -12,12 +12,20 @@ spec:
       labels:
         app: audiobookshelf
     spec:
+      securityContext:
+        fsGroup: 33
+        runAsUser: 33
+        runAsGroup: 33
+
       containers:
         - name: audiobookshelf
-          image: ghcr.io/advplyr/audiobookshelf:latest
+          image: ghcr.io/advplyr/audiobookshelf:2.17.2
           ports:
             - containerPort: 3005
               protocol: TCP
+          securityContext:
+            allowPrivilegeEscalation: false
+
           envFrom:
             - configMapRef:
                 name: audiobookshelf-configmap
