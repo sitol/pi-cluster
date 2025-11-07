@@ -4,5 +4,5 @@ metadata:
   name: audiobookshelf-configmap
   namespace: audiobookshelf
 data:
-  AUDIOBOOKSHELF_PORT: "3005"
+  PORT: "3005"
 
